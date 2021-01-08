@@ -2,6 +2,7 @@ PLEASE ANNOTATE NEW MODULES INSIDE .MODULE.TXT
 ------
 need to make .module.txt into easy to read document with dropdowns/hyperlinks
 
+```
 format ad_getdomaincontrollers
 forest_name {
     forest_dc1
@@ -13,6 +14,7 @@ forest_name {
         domain_dc
     }
 }
+```
 
 TODO
 -----
