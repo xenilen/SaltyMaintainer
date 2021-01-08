@@ -21,15 +21,15 @@ File in config folder to set multithread options for
 
 Goals
 -------
-Flexable modules that arent reliant on one thing (Modules/ WMI/ CIM)
-Automate maintenance for all servers
-Automate fixing issues found
+- Flexable modules that arent reliant on one thing (Modules/ WMI/ CIM)
+- Automate maintenance for all servers
+- Automate fixing issues found
 - Alerts operators if issues can't be fixed (email/slack)
--- gathers information that could be useful/related
-Expandable (Multithreaded/multiserver)
-Able to function in any environment
-Dynamic analytics (green/red to indepth readouts)
-Easy to setup
+    -gathers information that could be useful/related
+- Expandable (Multithreaded/multiserver)
+- Able to function in any environment
+- Dynamic analytics (green/red to indepth readouts)
+- Easy to setup
 
 Structure
 ------
@@ -46,7 +46,7 @@ GUI for manual maintenance input
 
 SaltyMaintainer ( job manager )
 - Redundant
--- Multiple ways to execute tasks
+    - Multiple ways to execute tasks
 - Secure
--- Uses Group managed service account
---- Minimal permissions to do job
+    - Uses Group managed service account
+        - Minimal permissions to do job
