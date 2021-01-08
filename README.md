@@ -1,4 +1,5 @@
 PLEASE ANNOTATE NEW MODULES INSIDE .MODULE.TXT
+------
 need to make .module.txt into easy to read document with dropdowns/hyperlinks
 
 format ad_getdomaincontrollers
