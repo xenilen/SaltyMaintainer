@@ -1,0 +1,1 @@
+﻿(Get-ChildItem "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall" | Where-Object { $_.GetValue("DisplayName") -like "*Axway*" } ).GetValue("DisplayVersion")

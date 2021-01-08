@@ -1,0 +1,8 @@
+-----------------
+name: dhcp_services
+task: Checks status of DHCPServer service
+output:
+-----------------
+name: dhcp_testscopes
+task: tries to read all ipv4 dhcp scopes
+output:

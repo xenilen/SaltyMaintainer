@@ -1,0 +1,44 @@
+----------------
+name: server_diskspace
+task: Gets all disk names, used space, and free space.  Then does math to calculate disk used, disk free, disk total space, disk percentage free, and disk percentage used.  If disk space is <=85% it fails
+output:
+{
+ "drivespace":
+}
+----------------
+name: server_hbssconfiguration
+task: Looks for McAfee command line agent in C:\Program Files\McAfee\Agent.  If it is there then it uses the arguement -i to get all the agent info
+output:
+{
+ "agentconfigs":
+}
+----------------
+name: server_hbssinstallstatus
+task: Looks for "McAfee Agent","McAfee DLP Endpoint","McAfee Host Intrusion Prevention","McAfee Policy Auditor Agent", and "McAfee VirusScan Enterprise" inside the x64 ("HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall") and x96 ("HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall") regkey install locations
+output:
+{
+ "hbssinstalled":
+}
+----------------
+name: server_ipconfiguration
+task: Gathers basic ip information from attached NICs
+output:
+{
+ "status":
+}
+----------------
+name: server_uptime
+task: Uses WMI Object Win32_OperatingSystem to get OS information, then seperates the lastbootuptime and formats it to day, hours, minutes, seconds.
+output: 
+----------------
+name: server_axwayversion
+task: reads registry from "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall" and displays the version
+output:
+----------------
+name: server_roles
+task:
+output:
+----------------
+name: dra_service
+task: check status of "IISADMIN","NetIQDRACache","NetIQDRACore","NetIQDRAHost","NetIQDRALogArchive","NetIQDRARest" services
+output:

@@ -1,0 +1,1 @@
+﻿get-service -name "DHCPServer" | sort status,name
